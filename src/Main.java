@@ -24,5 +24,14 @@ public class Main {
         for (int j = 0; j < array.length; j++) {
             System.out.print(array[j] + "\t");
         }
+        int max = array[0];
+        int index = 1;
+        for (int j = 0; j < array.length ; j++) {
+            if (array[j] > max){
+                max = array[j];
+                index = j + 1 ;
+            }
+        }
+        System.out.println("the largest property value in the list is "+ max + ",at position"+ index);
     }
 }
